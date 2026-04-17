@@ -73,7 +73,7 @@ body {
     font-size: 1.05rem;
     font-weight: 600;
     line-height: 1.6;
-    max-width: 580px;
+    max-width: 65vw;
     padding: 0 var(--h-pad);
 }
 
@@ -109,6 +109,7 @@ form {
 .inputs {
     display: flex;
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 .left,
