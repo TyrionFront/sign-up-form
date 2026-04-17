@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Sign-up form</title>
+    </head>
+    <body>
+        <div class="logo">
+            <div class="logo-content">
+                <img src="./odin-lined.png" alt="odin-logo" />
+                <p>ODIN</p>
+            </div>
+        </div>
+        <div class="form-box">
+            <p class="description">
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p class="description">You <em>know</em> you want to.</p>
+            <form action="" method="get">
+                <div class="form-section">
+                    <p class="form-title">Let's do this!</p>
+
+                    <div class="inputs">
+                        <div class="left">
+                            <label for="first_name">FIRST NAME</label>
+                            <input
+                                type="text"
+                                id="first_name"
+                                name="first_name"
+                                minlength="2"
+                                maxlength="20"
+                                pattern="[A-Za-z]{2,20}"
+                                required
+                            />
+
+                            <label for="email">EMAIL</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                maxlength="50"
+                                required
+                            />
+
+                            <label for="password">PASSWORD</label>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                minlength="8"
+                                maxlength="20"
+                                required
+                            />
+                        </div>
+
+                        <div class="right">
+                            <label for="last_name">LAST NAME</label>
+                            <input
+                                type="text"
+                                id="last_name"
+                                name="last_name"
+                                minlength="2"
+                                maxlength="20"
+                                pattern="[A-Za-z]{2,20}"
+                                required
+                            />
+
+                            <label for="phone_number">PHONE NUMBER</label>
+                            <input
+                                type="tel"
+                                id="phone_number"
+                                name="phone_number"
+                                pattern="[\d ]{7,15}"
+                                maxlength="15"
+                            />
+
+                            <label for="confirm_password"
+                                >CONFIRM PASSWORD</label
+                            >
+                            <input
+                                type="password"
+                                id="confirm_password"
+                                name="confirm_password"
+                                minlength="8"
+                                maxlength="20"
+                                required
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-footer">
+                    <button type="submit">Create Account</button>
+                    <p class="login-link">
+                        Already have an account? <a href="#">Log in</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
